@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../imagen.css" type="text/css">
+    <title>LISTA DE LOS PACIENTES </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+<body>
+  <%- include('menu') %>
+    <div class="card text-center">
+        <div class="card-header">
+          LISTA
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"> Lista de pacientes </h5>
+          <p class="card-text">
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre del paciente</th>
+                    <th scope="col">Cédula</th>
+                    <th scope="col">Apellido del paciente</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Telefono</th>
+            
+                  </tr>
+                </thead>
+                <tbody>
+                    <% search1.forEach(x => { %>
+
+                        <tr>
+                            <th scope="row"> <%= x.nombre %> </th>
+                            <td><%= x.cedula %></td>
+                            <td><%= x.apellido %></td>
+                            <td><%= x.especialidad %></td>
+                            <td><%= x.edad%></td>
+                            <td><%= x.telefono%></td>
+                            <td>
+                              
+                            </td>
+                        </tr>
+
+                        <%
+                    }); %>
+                  
+                </tbody>
+              </table>
+              <p>
+          </p>
+          <a href="/crear2" class="btn btn-primary">Regresar</a>
+
+        </div>
+        <div class="card-footer text-body-secondary">
+         DIANA MILENA BERMÚDEZ VALLEJO
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

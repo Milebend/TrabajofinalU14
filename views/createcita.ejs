@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../imagen.css" type="text/css">
+    <title>FORMULARIO DEL DOCTOR</title>
+</head>
+
+<body>
+    <%- include('menu') %>
+        <br>
+        <br>
+
+        <form id=caja action="/salvar3" method="POST">
+
+            <h1> F O R M U L A R I O - CITAS MÉDICAS </h1>
+
+            <form id="formulariocita" class="formulariocita">
+                <label for="fecha">Ingrese la fecha para su cita: </label>
+                <input type="text" name="fecha" id="fecha" required="true" />
+                <br>
+                <br>
+                <label for="cedulacita">Ingrese su número de cédula: </label>
+                <input type="text" name="cedulacita" id="cedulacita" />
+                <br>
+                <br>
+                <label for="specil"> Elija la especialidad: </label>
+                <select name="specil" id="specil">
+                    <option value="Medicina general"> Medicina general </option>
+                    <option value="Cardiología"> Cardiología </option>
+                    <option value="Medicina interna"> Medicina interna </option>
+                    <option value="Dermatología"> Dermatología </option>
+                    <option value="Rehabilitación física"> Rehabilitación física</option>
+                    <option value="Psicología"> Psicología </option>
+                    <option value="Odontología"> Odontología </option>
+                    <option value="Radiología"> Radiología </option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-outline-light">Enviar</button>
+                <a href="/" class="btn btn-secondary">Cancelar</a>
+            </form>
+
+            </p>
+            </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

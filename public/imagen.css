@@ -1,0 +1,53 @@
+body{
+    background-color:rgb(182, 180, 212)
+}
+h1{
+    color: black;
+}
+#caja{
+    background-color: rgb(122, 107, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 70px;
+    margin-right: 300px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#especiald {
+    font-family:sa'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#especialpa{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+#formulariopac {
+    background-color: rgb(107, 142, 255);
+    color: rgb(0, 0, 0);
+    border-color: black;
+    margin-left: 30px;
+    margin-top: 70px;
+    margin-right: 30px;
+    border-radius: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+#home {
+    background-color:rgb(182, 180, 212)
+}
+
+button {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#a1 {
+    width:500px;
+    height:200px;
+    margin-right: auto;
+    margin-left: auto; ;
+}
